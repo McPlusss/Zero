@@ -1,0 +1,27 @@
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.5.10'
+    id 'org.jetbrains.kotlin.plugin.serialization' version '1.5.10'
+
+    id 'net.mamoe.mirai-console' version '2.9.2'
+}
+
+group = 'cn.mcplus'
+version = '1.0.0'
+
+repositories {
+    maven { url 'https://maven.aliyun.com/repository/public' }
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/org.java-websocket/Java-WebSocket
+    implementation 'org.java-websocket:Java-WebSocket:1.5.3'
+
+    // https://mvnrepository.com/artifact/com.google.code.gson/gson
+    implementation 'com.google.code.gson:gson:2.9.0'
+
+    // https://mvnrepository.com/artifact/com.alibaba/fastjson
+    implementation 'com.alibaba:fastjson:2.0.4'
+
+}
+
